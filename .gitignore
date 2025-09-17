@@ -37,8 +37,10 @@ ENV/
 *.swo
 
 # Logs
+logs/
 *.log
-debate_log.txt
 
 # Generated files
-debate_dag_diagram.md
+logs/debate_dag_diagram.md
+logs/debate_log.txt
+logs/dag_generation.log

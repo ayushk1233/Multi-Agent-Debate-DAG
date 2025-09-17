@@ -36,13 +36,17 @@ debate_dag/
 │   ├── config.py
 │   ├── logger.py
 │   └── state.py
+├── scripts/
+│   ├── check_models.py
+│   ├── generate_dag.py
+│   └── test_setup.py
+├── logs/
+│   ├── debate_log.txt
+│   ├── dag_generation.log
+│   └── debate_dag_diagram.md
 ├── main.py
-├── generate_dag.py
-├── check_models.py
-├── test_setup.py
-├── debate_log.txt
-├── debate_dag_diagram.md
 ├── requirements.txt
+├── .env.example
 └── README.md
 ```
 
@@ -93,13 +97,13 @@ python main.py
 Create a visual representation of the debate flow:
 
 ```bash
-python generate_dag.py
+python scripts/generate_dag.py
 ```
 
 ### Viewing Outputs
 
-- **Debate Log**: Open `debate_log.txt` to view the complete debate history
-- **DAG Diagram**: Open `debate_dag_diagram.md` in VS Code with Mermaid support or on GitHub
+- **Debate Log**: Open `logs/debate_log.txt` to view the complete debate history
+- **DAG Diagram**: Open `logs/debate_dag_diagram.md` in VS Code with Mermaid support or on GitHub
 
 ### Customizing the Debate
 
